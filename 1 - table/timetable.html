@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style>
+      .daa {
+        background: #3498db;
+      }
+
+      .pcd {
+        background: #9b59b6;
+      }
+
+      .or {
+        background: #4578ab;
+      }
+
+      .ml {
+        background: #2ecc71;
+      }
+
+      .ir {
+        background: #e74c3c;
+      }
+
+      .wt {
+        background: #f39c12;
+      }
+
+      .mp {
+        background: #d9e40b;
+      }
+
+      .shd {
+        background: #228287;
+      }
+
+      .scil {
+        background: #d159cb;
+      }
+
+      .subject {
+        font-weight: 300;
+      }
+
+      body {
+        background: #942f59;
+        padding: 20px;
+      }
+
+      table {
+        font-family: "Open Sans";
+        color: #080808;
+      }
+
+      table tr:nth-child(2n) {
+        background: #eff0f1;
+      }
+      table tr:nth-child(2n + 3) {
+        background: #fff;
+      }
+
+      table th,
+      table td {
+        padding: 16px;
+        width: 160px;
+        text-align: center;
+      }
+
+      .days,
+      .time {
+        background: #1d3153;
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- / College Timetable -->
+    <div class="tab">
+      <table cellspacing="0">
+        <tr class="days">
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td class="time">9:00 - 9:55</td>
+          <td class="wt" rowspan="2">WTL</td>
+          <td class="scil" rowspan="3">SCIL</td>
+          <td class="mp" rowspan="2">MP</td>
+          <td class="or">OR</td>
+          <td class="ml">MLCL</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">10.00 - 10:45</td>
+          <td class="ml">ML</td>
+          <td class="ir">IR</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">10:50 - 11:35</td>
+          <td class="daa">DAA</td>
+          <td class="ml">ML</td>
+          <td class="wt" rowspan="2">WTL</td>
+          <td class="daa">DAA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">11:40 - 12:25</td>
+          <td class="ml">ML</td>
+          <td class="ir" colspan="2">IR</td>
+          <td class="pcd">PCD</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">12:55 - 1:40</td>
+          <td class="or">OR</td>
+          <td class="ml" rowspan="2">MLCL</td>
+          <td class="daa">DAA</td>
+          <td class="shd" rowspan="2">SHD</td>
+          <td class="ml">ML</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">1:45 - 2:30</td>
+          <td class="pcd">PCD</td>
+          <td class="or">OR</td>
+          <td class="ir">IR</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">2:35 - 3:20</td>
+          <td class=""></td>
+          <td class=""></td>
+          <td class="daa">DAA T</td>
+          <td class=""></td>
+          <td class="daa">DAA T</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

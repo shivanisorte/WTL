@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color </title>
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">This is a paragraph.</p>
+   
+    Change text color and text's background color to  &nbsp;
+    <select id="textCol">  
+        <option value="red">Red</option>  
+        <option value="blue">Blue</option>  
+        <option value="yellow">Yellow</option>  
+        <option value="green">Green</option>  
+        <option value="grey">Grey</option> 
+    </select> 
+
+    <select id="textBgCol">  
+        <option value="red">Red</option>  
+        <option value="blue">Blue</option>  
+        <option value="yellow">Yellow</option>  
+        <option value="green">Green</option>  
+        <option value="grey">Grey</option> 
+    </select> 
+
+    <br>
+    <br>
+    <input type="button" value="Change" onclick="changeIt()">
+
+    <script>
+        function changeIt(){
+            var para = document.getElementById("p1");
+            var textCol = document.getElementById("textCol").value;
+            var textBgCol = document.getElementById("textBgCol").value;
+
+            if(textCol==textBgCol){
+                p1.style.color = "black"
+                p1.style.backgroundColor = "white"
+            }
+            else{
+                if(textCol=="red"){
+                    p1.style.color = "red"
+
+                }
+                else if(textCol=="blue"){
+                    p1.style.color = "blue"
+
+                }
+                else if(textCol=="yellow"){
+                    p1.style.color = "yellow"
+
+                }
+                else if(textCol=="green"){
+                    p1.style.color = "green"
+
+                }
+                else if(textCol=="grey") {
+                    p1.style.color = "grey"
+
+
+                }
+
+
+                if(textBgCol=="red"){
+                    p1.style.backgroundColor = "red"
+
+                }
+                else if(textBgCol=="blue"){
+                    p1.style.backgroundColor = "blue"
+
+                }
+                else if(textBgCol=="yellow"){
+                    p1.style.backgroundColor = "yellow"
+
+                }
+                else if(textBgCol=="green"){
+                    p1.style.backgroundColor = "green"
+
+                }
+                else if(textBgCol=="grey") {
+                    p1.style.backgroundColor = "grey"
+
+}
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

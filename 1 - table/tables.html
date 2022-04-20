@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Assignment</title>
+    <style>
+      td,
+      th {
+        text-align: left;
+        border: 1px solid black;
+      }
+      table {
+        width: 35%;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+
+      .colorit {
+        background-color: rgb(196, 196, 196);
+      }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="0">
+      <tr class="colorit">
+        <th colspan="2">65</th>
+        <th colspan="2">40</th>
+        <th colspan="2">20</th>
+      </tr>
+
+      <tr class="colorit">
+        <th>Men</th>
+        <th>Women</th>
+        <th>Men</th>
+        <th>Women</th>
+        <th>Men</th>
+        <th>Women</th>
+      </tr>
+
+      <tr>
+        <td>82</td>
+        <td>85</td>
+        <td>78</td>
+        <td>82</td>
+        <td>77</td>
+        <td>81</td>
+      </tr>
+    </table>
+
+    <table cellspacing="0">
+      <tr>
+        <th class="colorit"></th>
+        <th class="colorit"></th>
+        <th class="colorit">Bob</th>
+        <th class="colorit">Alice</th>
+      </tr>
+
+      <tr>
+        <th rowspan="2" class="colorit">Favorite</th>
+        <th class="colorit">Color</th>
+        <td>Blue</td>
+        <td>Purple</td>
+      </tr>
+
+      <tr>
+        <th class="colorit">Flavour</th>
+        <td>Banana</td>
+        <td>Chocolate</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2" class="colorit">Least Favorite</th>
+        <th class="colorit">Color</th>
+        <td>Yellow</td>
+        <td>Pink</td>
+      </tr>
+
+      <tr>
+        <th class="colorit">Flavour</th>
+        <td>Mint</td>
+        <td>Walnut</td>
+      </tr>
+    </table>
+  </body>
+</html>

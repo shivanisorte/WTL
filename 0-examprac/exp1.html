@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Reg Form</title>
+</head>
+<body style="background-color: rgb(202, 177, 226);">
+<center>
+    <h2 style="font-size: 35px; background-color: #e7c0f3; margin-left: 50px; margin-right: 50px;"><u>COMPANY REGISTRATION FORM</u></h2>
+</center>
+    <form style="background-color: #f1d9f8ea; margin-left: 50px; margin-right: 50px; font-size: 20px; padding-left: 30%; padding-top: 20px; padding-bottom: 20px;">
+        <label>Full Name</label>
+        &ensp;
+        <input type="text" placeholder="Enter your Name" required>
+
+        <div style="height: 30px;"></div>
+
+        <label>Email Addrress</label>
+        &ensp;
+        <input type="email" placeholder="Enter your email address" required>
+
+        <div style="height: 30px;"></div>
+
+        <label>Phone number</label>
+        &ensp;
+        <input type="number" maxlength="10" placeholder="Enter your phone number" required
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+
+        <div style="height: 30px;"></div>
+        
+        <label>Department</label>
+        &ensp;
+        <select>
+            <option value="" disabled selected>Select one</option>
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+            <option value="managament">Management</option>
+            <option value="design">Design</option>
+            <option value="HR">Humar Resources</option>
+        </select>
+
+        <div style="height: 30px;"></div>
+
+        <label>Gender</label>
+        <div style="height: 15px;"></div>
+        <input type="radio" value="male" name="gender"> Male <br>
+        <input type="radio" value="female" name="gender"> Female <br>
+        <input type="radio" value="others" name="gender"> Others <br>
+
+        <div style="height: 30px;"></div>
+
+        <label>Preferred Work Location</label>
+        <div style="height: 15px;"></div>
+        <input type="checkbox" value="wfh" name="wfh"> Work From Home <br>
+        <input type="checkbox" value="pune" name="pune"> Pune <br>
+        <input type="checkbox" value="mumbai" name="mumbai"> Mumbai <br>
+        <input type="checkbox" value="bagalore" name="bangalore"> Bangalore <br>
+
+        <div style="height: 30px;"></div>
+
+        <input type="submit">
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<body>
+<table id="tbl" border="1">
+</table>
+<input type="button" value="click"  onclick=create()></input>
+<script>
+ function create()
+ {
+     r=prompt("Enter no. of rows",4);
+	 n=prompt("Enter no. of colunms",4);
+
+	 /*var x=confirm("Are you sure want to delete?"); //will return boolean value true for ok false for cancel
+        alert(x);*/
+	 for(var i=0;i<r;i++)
+
+	 {
+	    var x=document.createElement("tr");
+		for(var j=0;j<n;j++)
+		{
+		   var y=document.createElement("td");
+		   var z=document.createTextNode(j);
+		   y.appendChild(z);
+		   x.appendChild(y);
+		}
+		document.getElementById("tbl").appendChild(x);
+	 }
+}
+</script>
+</body>
+</html>

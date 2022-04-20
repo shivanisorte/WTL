@@ -1,0 +1,33 @@
+<html>
+<head>
+	<style>
+		#d1{
+             height: 400px;
+             width: 400px;
+             border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+<div id="d1">
+<input type="radio"  name="c" value="red" onclick="fun()">red</input>
+
+<input type="radio" name="c" value="green" onclick="fun()">green</input>
+
+<input type="radio" name="c" value="blue" onclick="fun()">blue</input><br>
+</div>
+
+<script>
+function fun()
+{
+	var d1=document.getElementById('d1');
+	var x=document.querySelectorAll("input[type=radio]:checked");
+	for(i=0;i<x.length;i++)
+	{
+		//alert(x[i].value);
+	   d1.style.backgroundColor=x[i].value;
+	}
+}
+</script>
+</body>
+</html>

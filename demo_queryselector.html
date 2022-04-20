@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id="p1">This is p1</p>
+<p>This is p2</p>
+<div id="d1">
+<p>This is p3</p>
+<p id="p4">This is p4</p>
+<p>This is p5</p>
+</div>
+<input type="button" value="click" onclick="fun()">
+<script>
+function fun()
+{
+	/*var x=document.querySelector("#p4");
+	x.style.backgroundColor="yellow";*/
+
+	var arr=document.querySelectorAll("div p");
+	 for(i=0;i<arr.length;i++)
+	 {
+	 	arr[i].style.backgroundColor="blue";
+	 }
+
+}
+</script>
+</body>
+</html>

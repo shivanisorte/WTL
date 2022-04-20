@@ -1,0 +1,99 @@
+.coffee-header {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #0a2d42;
+  z-index: 100;
+}
+
+.div-logo {
+  height: 100%;
+  text-align: center;
+  margin: 10px;
+  float: left;
+}
+
+.logo-text {
+  display: block;
+  font-family: "Helventica New";
+  font-weight: bold;
+  color: white;
+}
+
+.coffee-nav {
+  float: right;
+  height: 100%;
+}
+
+.coffee-nav a {
+  color: white;
+  font-style: 15px;
+  font-weight: 700;
+  font-family: "Helventica New";
+  padding-right: 20px;
+  padding-top: 12%;
+  display: inline-block;
+}
+
+body {
+  margin: 0px;
+}
+
+.site-content {
+  position: absolute;
+  top: 78px;
+  width: 100%;
+}
+
+.image-content {
+  background-image: url("background-image.jpg");
+  height: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.quote {
+  color: white;
+  font-family: "Helventica New";
+  position: relative;
+  top: 10%;
+}
+
+.card-list {
+  width: 100%;
+}
+#product {
+  text-align: center;
+}
+
+.card {
+  width: 22%;
+  padding: 1.5%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.about-section {
+  width: 100%;
+  margin-top: 450px;
+}
+
+#about {
+  text-align: center;
+}
+
+.aboutmycafe {
+  text-align: center;
+  background-color: #d8b97f;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Helventica New";
+  font-size: large;
+}

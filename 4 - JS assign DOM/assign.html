@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Enter your name.
+    <input type="nameText" id="t1">
+    <input type="button" value="Click" onclick="sayHello()">
+    <br>
+    <p id="greet"></p>
+    <br>
+
+    Calculations
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Subtract" onclick="sub()">
+    <input type="button" value="Multiply" onclick="mult()">
+    <input type="button" value="Divide" onclick="divi()">
+    <br>
+    <p id="solution"></p>
+    <br>
+
+    Please Enter your First and Last Name.
+    <input type="text" value="First" id="firstName">
+    <input type="text" value="Last" id="lastName">
+    <input type="button" value="Click Here" onclick="yourFullName()">
+    <br>
+    <p id="yourNameRes"></p>
+    <br>
+
+
+
+
+    <script>
+        function sayHello(){
+            var txt = document.getElementById("t1");
+            pername = txt.value;
+            var greet = document.getElementById("greet")
+            greet.innerHTML = "Hello "+ pername+". Welcome To the World of JavaScript."
+        }
+
+        function add(){
+            var numb1 = parseInt(document.getElementById("num1").value);
+            var numb2 = parseInt(document.getElementById("num2").value);
+            var result = document.getElementById("solution");
+            addition = numb1 + numb2;
+            solution.innerHTML = "Sum = " + addition;
+            
+            
+        }
+
+        function sub(){
+            var numb1 = parseInt(document.getElementById("num1").value);
+            var numb2 = parseInt(document.getElementById("num2").value);
+            var result = document.getElementById("solution");
+            subtraction  = numb1 - numb2;
+            solution.innerHTML = "Difference = " + subtraction;
+            
+        }
+
+        function mult(){
+            var numb1 = parseInt(document.getElementById("num1").value);
+            var numb2 = parseInt(document.getElementById("num2").value);
+            var result = document.getElementById("solution");
+            multiplication = numb1 * numb2;
+            solution.innerHTML = "Product = " + multiplication;
+            
+        }
+
+        function divi(){
+            var numb1 = parseInt(document.getElementById("num1").value);
+            var numb2 = parseInt(document.getElementById("num2").value);
+            var result = document.getElementById("solution");
+            division = numb1 / numb2;
+            solution.innerHTML = "Quotient = " + division;
+            
+        }
+
+        function yourFullName(){
+            var firstN = document.getElementById("firstName").value;
+            var lastN = document.getElementById("lastName").value;
+            var fullName = document.getElementById("yourNameRes")
+            fullName.innerHTML = "Your Full Name is " + firstN + " " + lastN + "."
+
+        }
+
+    </script>
+    
+</body>
+</html>

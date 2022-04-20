@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background-color: rgb(152, 196, 181);
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(19, 19, 19);
+  }
+  
+  .topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #727477;
+    color: white;
+  }
+
+  #title {
+    font-family: monospace;
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #img-caption {
+      font-family: monospace;
+      font-size: 25px;
+      text-align: center;
+      color: #0000ff;
+    }
+
+    .picheading{
+      display: block;
+      font-size: 43px;
+      font-family: monospace;
+      font-weight: bold;
+      margin-left: 5%;
+      margin-right: 5%;
+      
+    }
+
+  .imgbord{
+    border: 5px solid black;
+  }
+
+
+.my-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  margin: 100px;
+}
+
+.my-image{
+  height: 300px;
+  width: 300px;
+}
+
+.myimgheading{
+  font-family: monospace;
+  font-size: 25px;
+  text-align: center;
+  color: #030303;
+  text-decoration: none;
+
+}
+
+.my-image:hover{
+  height: 320px;
+  width: 320px;
+}
+
+
+.myaccom-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px;
+  margin: 100px;
+}
+
+
+.accomtitle{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030303;
+  text-decoration: none;
+  
+}
+
+.accom-image{
+  height: 350px;
+  width: 450px;
+}
+
+
+
+.accom-image1{
+  height: 500px;
+  width: 400px;
+}
+
+
+.accom-image1:hover{
+  height: 500px;
+  width: 410px;
+}
+
+.subtit{
+  font-family: monospace;
+      text-align: center;
+      font-weight: bold;
+}
+
+
+
+.slider {
+  margin-top: 40px;
+  width: 600px;
+  background-image: url("82.jpg");
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  width: 400%;
+  height: 400px;
+  animation: slide 7s ease-in infinite;
+}
+
+.slide img {
+  width: 600px;
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {background:url("82.jpg") ;width: 600px; height: 100%}
+  5% {background:url("82.jpg") ;width: 600px; height: 100%}
+  10% {background:url("82.jpg") ;width: 600px; height: 100%}
+  15% {background:url("82.jpg") ;width: 600px; height: 100%}
+  20% {background:url("82.jpg") ;width: 600px; height: 100%}
+  25% {background:url("82.jpg") ;width: 600px; height: 100%}
+
+  30% {background:url("WhatsApp Image 2022-02-25 at 14.06.17.jpeg") ; width: 600px; height: 100%;}
+  35% {background:url("WhatsApp Image 2022-02-25 at 14.06.17.jpeg") ; width: 600px; height: 100%;}
+  40% {background:url("WhatsApp Image 2022-02-25 at 14.06.17.jpeg") ; width: 600px; height: 100%;}
+  45% {background:url("WhatsApp Image 2022-02-25 at 14.06.17.jpeg") ; width: 600px; height: 100%;}
+  50% {background:url("WhatsApp Image 2022-02-25 at 14.06.17.jpeg") ; width: 600px; height: 100%;}
+
+  55% {background:url("279.jpg") ;width: 600px; height: 100%}
+  60% {background:url("279.jpg") ;width: 600px; height: 100%}
+  65% {background:url("279.jpg") ;width: 600px; height: 100%}
+  70% {background:url("279.jpg") ;width: 600px; height: 100%}
+  75% {background:url("279.jpg") ;width: 600px; height: 100%}
+
+  80% {background:url("WhatsApp Image 2022-02-25 at 14.06.34.jpeg") ;width: 600px; height: 100%}
+  85% {background:url("WhatsApp Image 2022-02-25 at 14.06.34.jpeg") ;width: 600px; height: 100%}
+  90% {background:url("WhatsApp Image 2022-02-25 at 14.06.34.jpeg") ;width: 600px; height: 100%}
+  95% {background:url("WhatsApp Image 2022-02-25 at 14.06.34.jpeg") ;width: 600px; height: 100%}
+  100% {background:url("WhatsApp Image 2022-02-25 at 14.06.34.jpeg") ;width: 600px; height: 100%}
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">This is paragraph.</p>
+
+    Enter your name.
+    <input type="text" id="t1">
+    <input type="button" value="Click" onclick="fun4()">
+
+
+    <!-- <input type="button" value="Click" onclick="fun1()"> -->
+    <!-- <input type="button" value="Click" onclick="fun2()"> -->
+    <!-- <input type="button" value="Click" onclick="fun3()"> -->
+
+<script>
+    function fun1(){
+        alert("This is an alert box.")
+    }
+
+    function fun2(){
+        var pRef=document.getElementById("p1");
+        pText = pRef.innerHTML;
+        alert(pText);
+    }
+
+    function fun3(){
+        var pRef=document.getElementById("p1");
+        pRef.innerHTML="This is the new paragraph."
+    }
+
+    function fun4() {
+        var txt = document.getElementById("t1");
+        pername = txt.value;
+        alert("Hello "+ pername);
+    }
+
+</script>
+
+
+</body>
+</html>

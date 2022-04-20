@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    Enter a number to find Factorial.
+    <input type="number" id="numb">
+    <input type="button" value="Check" onclick="calcFactorial()">
+    <br>
+    <p id="result"></p>
+    
+    <script>
+        function calcFactorial(){
+            var numb = parseInt(document.getElementById("numb").value);
+            var result = document.getElementById("result");
+            if (numb == 0){
+                result.innerHTML = "Factorial = 1"
+            }
+            else if (numb<0){
+                result.innerHTML = "Please enter a whole number."
+            }
+            else{
+                let fact = 1;
+                for(let i = numb; i>1; i--){
+                    fact = fact*i;
+                }
+                result.innerHTML = "Factorial = "+fact;
+            }
+            
+            
+                
+                
+            
+        }
+    </script>
+</body>
+</html>

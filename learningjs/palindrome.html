@@ -1,0 +1,80 @@
+<!-- split revense join -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #result, #resultstr{
+            height: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    Enter a number to check if palindrome or not.
+    <input type="number" id="numb">
+    <input type="button" value="Check" onclick="checkPalindromeNum()">
+    <br>
+    <p id="result"></p>
+
+    Enter a string to check if palindrome or not.
+    <input type="text" id="enteredString">
+    <input type="button" value="Check" onclick="checkPalindromeStr()">
+    <br>
+    <p id="resultstr"></p>
+
+    <script>
+        function checkPalindromeStr(){
+            var enteredString= document.getElementById("enteredString").value;
+            var result = document.getElementById("resultstr");
+            let copyStr = enteredString;
+            revString = copyStr.split("").reverse().join("");
+            if(revString==enteredString){
+                result.innerHTML = "Palindrome String"
+            }
+            else{
+                result.innerHTML = "Not a Palindrome"
+            }
+
+        }
+
+        function checkPalindromeNum(){
+            var numb = parseInt(document.getElementById("numb").value);
+            var result = document.getElementById("result");
+            let numbcopy = numb;
+            let  revnumb = 0 ; 
+            while (numb != 0){
+                temp = numb%10;
+                revnumb = revnumb*10+temp;
+                numb=parseInt(numb/10);
+            }
+            if(revnumb==numbcopy){
+                result.innerHTML = "Palindrome Number";
+            }
+            else{
+                result.innerHTML = "Not Palindrome";
+            }
+
+            //result.innerHTML = revnumb;
+
+
+
+        }
+
+        
+
+    </script>
+
+</body>
+</html>

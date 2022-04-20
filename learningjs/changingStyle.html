@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color style changing using JS</title>
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1"> TEXT TEXT TEXT TEXT TEXT</p>
+    <br>
+    <input type="button" value="Click on me to change the size of the above text." onclick="changeParaColor()">
+    <br><br>
+
+    <input type="button" value="Click on me to change the color of the page" onclick="changePageColor()">
+    <br>
+    <script>
+        function changePageColor(){
+            document.bgColor = "red"
+
+        }
+
+        function changeParaColor(){
+            var parag = document.getElementById("p1");
+            parag.style.fontSize = "50px"
+
+        }
+    </script>
+    
+</body>
+</html>

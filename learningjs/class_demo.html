@@ -1,0 +1,35 @@
+<html>
+<body>
+<p id="p1">This is p1<p>
+<p>This is p2</p>
+<div id="d1">
+<p> This is p3</p>
+<p id="p4">This is p4</p>
+<p>This is p5</p>
+
+</div>
+<input type="button" Value="Click" onclick="fun()">
+<script>
+function fun()
+{
+	var p1=document.getElementById("p1");
+	var d1=document.getElementById("d1");
+	var p4=document.getElementById("p4");
+
+	//alert(p4.nodeName);
+
+	//d1.appendChild(p1);
+
+	//document.body.appendChild(p1);
+
+	//d1.insertBefore(p1,p4);
+	  
+	 //d1.replaceChild(p4,d1.lastChild);
+
+  //d1.removeChild(p4);
+
+  document.body.removeChild(p1);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        body{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+      
+    </style>
+</head>
+<body>
+    Enter a number for its multiplication table
+    <input type="number" id="num">
+    <input type="button" value="Calculate" onclick="multtable()">
+    <br>
+    <p id="yourmulttable"></p>
+    
+    
+    <script>
+        function multtable(){
+            var numb = parseInt(document.getElementById("num").value);
+            var multtable = document.getElementById("yourmulttable")
+            for(let i = 1; i <= 10; i++){
+                result = i*numb
+                multtable.innerHTML = `${multtable.innerHTML + numb} * ${i} = ${result} <br>`
+                }
+        }
+    </script>
+</body>
+</html>
+

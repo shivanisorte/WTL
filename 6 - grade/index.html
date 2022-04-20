@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grader</title>
+    <style>
+    body{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+<body>
+    Enter your marks
+    <input type="number" id="marks">
+    <input type="button" value="Calculate Grade" onclick="tellGrade()">
+    <br>
+    <p id="gradeArea"></p>
+
+    <script>
+        function tellGrade(){
+            var marks = parseInt(document.getElementById("marks").value);
+            var area = document.getElementById("gardeArea");
+            if(marks<=100 && marks>=90){
+                alert("You got A grade")
+            }
+            else if (marks<90 && marks>=80){
+                alert("You got B grade")
+            }
+            else if (marks<80 && marks>=70){
+                alert("You got C grade")
+            }
+            else{
+                alert("You failed")
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

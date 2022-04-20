@@ -1,0 +1,29 @@
+<html>
+<body>
+<input type="radio"  name="c" value="red">red</input>
+
+<input type="radio" name="c" value="green">green</input>
+
+<input type="radio" name="c" value="blue">blue</input><br>
+
+<input type="button" value="click" onclick="fun()"></input>
+
+<div id="d1"></div>
+
+<script>
+function fun()
+{
+	var d1=document.getElementById('d1');
+	var x=document.querySelectorAll("input[type=radio]:checked");
+	for(i=0;i<x.length;i++)
+	{
+		//alert(x[i].value);
+	   document.bgColor=x[i].value;
+	}
+	/*var x=document.querySelector("input[type=radio]:checked");
+	d1.innerHTML=x.value;*/
+
+}
+</script>
+</body>
+</html>

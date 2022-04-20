@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button on button</title>
+
+    <style>
+        .oldBut{
+            background-color: rgb(122, 204, 204);
+            height: 50px;
+            width: 100px;
+        }
+
+        .newBut{
+            background-color: yellow;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+<input type="button" Value="I'm button 1" onclick="funct()" class="oldBut" >
+<script>
+
+function funct()
+{
+    
+    var br = document.createElement("br");
+    document.body.appendChild(br);
+    document.body.appendChild(br);
+    var theButton = document.createElement("button");
+    theButton.innerHTML = "I'm new button";
+    theButton.setAttribute("class", "newBut");
+    document.body.appendChild(theButton);
+    theButton.onclick = function(){
+        alert("I have been called by the new button!");
+    };
+
+
+	
+
+	//alert(p4.nodeName);
+
+	
+}
+</script>
+    
+</body>
+</html>
