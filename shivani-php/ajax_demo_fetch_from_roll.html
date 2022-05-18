@@ -1,0 +1,45 @@
+<html>
+<body>
+Enter rollno:<input type="text" id="t1">
+
+<input type="button" value="getdata" onclick="fun()">
+
+<div id="id1"></div>
+
+<script type="text/javascript">
+	function fun(){
+        var r=document.getElementById('t1').value;
+
+        var xmlhttp = new XMLHttpRequest();
+
+		xmlhttp.onreadystatechange = function()
+		{
+			if (xmlhttp.readyState == 4 && xmlhttp.status ==200)
+			{		  
+		   	 myfunction(xmlhttp.responseText);
+			 //alert(xmlhttp.responseText);
+			}
+		}
+        
+        var str="rollno="+r;
+
+        xmlhttp.open("GET","ajax_fetch_from_roll.php?"+str, true)
+	    xmlhttp.send();
+  
+	}
+	function myfunction(str)
+{
+	var arr =JSON.parse(str);
+	alert(arr);
+	var i;
+	var out = "<table border=2>";
+	for (i=0;i<arr.length;i++)
+	{
+     out +="<tr><td>" +arr[i].rollno+"</td><td>"+arr[i].name+"</td><td>"+arr[i].marks+"</td></tr>";
+	}
+	out +="</table>";
+	document.getElementById("id1").innerHTML=out;
+}
+</script>
+</body>
+</html>
